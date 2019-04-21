@@ -1,12 +1,19 @@
 import * as firebase from "firebase";
+import {
+  apiKey,
+  authDomain,
+  databaseURL,
+  projectId,
+  storageBucket,
+  messagingSenderId } from "./dev";
 
 const config = {
-  apiKey: "AIzaSyAjH0h5MxLQrBoiFQ4gJ1QPuGAd5rmyvdY",
-  authDomain: "project-fear.firebaseapp.com",
-  databaseURL: "https://project-fear.firebaseio.com",
-  projectId: "project-fear",
-  storageBucket: "project-fear.appspot.com",
-  messagingSenderId: "231380190456"
+  apiKey: apiKey,
+  authDomain: authDomain,
+  databaseURL: databaseURL,
+  projectId: projectId,
+  storageBucket: storageBucket,
+  messagingSenderId: messagingSenderId
 };
 
 firebase.initializeApp(config);
