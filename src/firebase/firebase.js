@@ -1,19 +1,13 @@
 import * as firebase from "firebase";
-import {
-  apiKey,
-  authDomain,
-  databaseURL,
-  projectId,
-  storageBucket,
-  messagingSenderId } from "./dev";
+import env from "./dev";
 
 const config = {
-  apiKey: apiKey,
-  authDomain: authDomain,
-  databaseURL: databaseURL,
-  projectId: projectId,
-  storageBucket: storageBucket,
-  messagingSenderId: messagingSenderId
+  apiKey: env.apiKey,
+  authDomain: env.authDomain,
+  databaseURL: env.databaseURL,
+  projectId: env.projectId,
+  storageBucket: env.storageBucket,
+  messagingSenderId: env.messagingSenderId
 };
 
 firebase.initializeApp(config);
